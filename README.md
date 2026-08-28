@@ -60,29 +60,6 @@ O sistema atende moradores, agentes comunitários de saúde (ACS), equipes médi
 * **Administradores:** Gestores das Secretarias Municipais de Saúde encarregados do planejamento das expedições.
 
 ---
-
-##  Arquitetura do Projeto
-
-          +-------------------------------------------------+
-           |             PWA Client / Web App                |
-           | (React / Service Workers / IndexedDB (Offline)) |
-           +-----------------------+-------------------------+
-                                   |
-               HTTP / TLS (Sincronização ao conectar)
-                                   v
-           +-------------------------------------------------+
-           |                 API Gateway / REST              |
-           +-----------------------+-------------------------+
-                                   |
-               +-------------------+-------------------+
-               |                                       |
-               v                                       v
-    +--------------------+                   +-------------------+
-    | PostgreSQL + PostGIS|                   | Exportação e-SUS  |
-    |  (Dados & Geoloc)  |                   | (Thrift / PEC)    |
-    +--------------------+                   +-------------------+
-    
----
 ## Arquitetura
 
 saflu/
@@ -153,3 +130,27 @@ saflu/
 ├── LICENSE                        # Licença de uso do software (ex: MIT)
 ├── README.md                      # Documentação principal para o repositório no GitHub
 └── package.json                   # Dependências e scripts do Node.js
+---
+
+##  Arquitetura do Projeto
+
+          +-------------------------------------------------+
+           |             PWA Client / Web App                |
+           | (React / Service Workers / IndexedDB (Offline)) |
+           +-----------------------+-------------------------+
+                                   |
+               HTTP / TLS (Sincronização ao conectar)
+                                   v
+           +-------------------------------------------------+
+           |                 API Gateway / REST              |
+           +-----------------------+-------------------------+
+                                   |
+               +-------------------+-------------------+
+               |                                       |
+               v                                       v
+    +--------------------+                   +-------------------+
+    | PostgreSQL + PostGIS|                   | Exportação e-SUS  |
+    |  (Dados & Geoloc)  |                   | (Thrift / PEC)    |
+    +--------------------+                   +-------------------+
+    
+
