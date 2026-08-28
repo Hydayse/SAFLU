@@ -34,11 +34,11 @@
 
 ---
 
-## 🌊 Sobre o Projeto
+##  Sobre o Projeto
 
 O **SAFLU** é um sistema web desenvolvido para organizar, controlar e gerenciar os agendamentos de atendimentos de saúde realizados por **Unidades Básicas de Saúde Fluviais (UBSF)**. A solução foi projetada especificamente para atender às particularidades logísticas e geográficas das comunidades ribeirinhas ao longo do **Rio Negro**, na Amazônia.
 
-### 🎯 Objetivos Principais
+###  Objetivos Principais
 * **Gerenciamento de Agendamentos:** Permitir o cadastro e a marcação de consultas, vacinações e atendimentos odontológicos ou de enfermagem.
 * **Controle Terrritorial:** Mapear e gerenciar as comunidades ribeirinhas, rotas fluviais e o cronograma de paradas das embarcações.
 * **Suporte Offline-First:** Garantir o armazenamento local de dados e a sincronização posterior quando houver conexão via satélite ou no retorno à cidade.
@@ -46,13 +46,13 @@ O **SAFLU** é um sistema web desenvolvido para organizar, controlar e gerenciar
 
 ---
 
-## 🛠️ Justificativa Técnica
+##  Justificativa Técnica
 
 Devido à grande extensão territorial e à limitação do transporte na região amazônica, a organização manual por fichas de papel gera duplicidade de horários, perda de dados e descontrole na fila de espera. O SAFLU resolve isso ao centralizar a informação, aplicar validações automáticas de agendamento e sincronizar os registros locais com os bancos centrais do **e-SUS APS/PEC**.
 
 ---
 
-## 📍 Área de Abrangência
+##  Área de Abrangência
 
 O sistema atende moradores, agentes comunitários de saúde (ACS), equipes médicas e gestores nas comunidades ribeirinhas do **Rio Negro e afluentes próximos**:
 * **Usuários Pacientes:** Moradores ribeirinhos que acessam horários e pré-agendamentos.
@@ -61,7 +61,7 @@ O sistema atende moradores, agentes comunitários de saúde (ACS), equipes médi
 
 ---
 
-## 🏛️ Arquitetura do Projeto
+##  Arquitetura do Projeto
 
           +-------------------------------------------------+
            |             PWA Client / Web App                |
