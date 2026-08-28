@@ -1,4 +1,4 @@
-# 🚤 SAFLU — Sistema Web de Agendamento para Unidade de Saúde Fluvial
+#  SAFLU — Sistema Web de Agendamento para Unidade de Saúde Fluvial
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange.svg)]()
@@ -20,7 +20,7 @@
 
 ---
 
-## 📋 Sumário
+##  Sumário
 - [Sobre o Projeto](#-sobre-o-projeto)
 - [Justificativa Técnica](#-justificativa-técnica)
 - [Área de Abrangência](#-área-de-abrangência)
