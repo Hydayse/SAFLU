@@ -62,7 +62,7 @@ O sistema atende moradores, agentes comunitários de saúde (ACS), equipes médi
 ---
 ## Arquitetura
 
-saflu/
+>saflu/
 ├── .github/                       # Configurações do GitHub (Workflows, CI/CD, Templates)
 │   ├── ISSUE_TEMPLATE/            # Modelos para abertura de bugs e tarefas
 │   └── workflows/                 # Pipelines de integração e deploy contínuo (CI/CD)
