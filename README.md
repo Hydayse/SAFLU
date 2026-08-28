@@ -4,7 +4,7 @@
 [![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange.svg)]()
 [![Instituição](https://img.shields.io/badge/Instituição-CETAM-green.svg)](https://www.cetam.am.gov.br/)
 [![Localização](https://img.shields.io/badge/Região-Rio%20Negro%20%2F%20AM-blue)](https://www.amazonas.am.gov.br/)
-[![TRELLO](https://trello.com/b/yCCygNpF/safluagendamento)]
+[![Trello](https://trello.com/b/yCCygNpF/safluagendamento)]
 
 > **Projeto de Prática Profissional Supervisionada**  
 > **Instituição:** Centro de Educação Tecnológica do Amazonas (CETAM) – Escola Técnica Galiléia  
