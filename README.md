@@ -62,7 +62,7 @@ O sistema atende moradores, agentes comunitários de saúde (ACS), equipes médi
 ---
 ## Arquitetura
 
--saflu/
+>saflu/
 ├── .github/                       # Configurações do GitHub (Workflows, CI/CD, Templates)
 │   ├── ISSUE_TEMPLATE/            # Modelos para abertura de bugs e tarefas
 │   └── workflows/                 # Pipelines de integração e deploy contínuo (CI/CD)
@@ -130,8 +130,8 @@ O sistema atende moradores, agentes comunitários de saúde (ACS), equipes médi
 ├── LICENSE                        # Licença de uso do software (ex: MIT)
 ├── README.md                      # Documentação principal para o repositório no GitHub
 └── package.json                   # Dependências e scripts do Node.js
----
 
+---
 ##  Arquitetura do Projeto
 
           +-------------------------------------------------+
