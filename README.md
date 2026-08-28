@@ -86,16 +86,70 @@ O sistema atende moradores, agentes comunitários de saúde (ACS), equipes médi
 ## Arquitetura
 
 saflu/
-├── docs/                   # Documentações técnicas e manuais
-│   ├── modelagem/          # Diagramas ER, Casos de Uso e Sequência
-│   └── relatorio_cetam.pdf # Relatório Técnico do Projeto
-├── src/
-│   ├── assets/             # Imagens, ícones e estilos globais
-│   ├── components/         # Componentes visuais reutilizáveis
-│   ├── database/           # Scripts SQL, migrations e seeds
-│   ├── services/           # Regras de negócio e integração API/e-SUS
-│   └── views/              # Telas do sistema (Login, Agenda, Dashboard)
-├── .gitignore
-├── LICENSE
-├── README.md
-└── package.json
+├── .github/                       # Configurações do GitHub (Workflows, CI/CD, Templates)
+│   ├── ISSUE_TEMPLATE/            # Modelos para abertura de bugs e tarefas
+│   └── workflows/                 # Pipelines de integração e deploy contínuo (CI/CD)
+│       └── deploy.yml
+├── docs/                          # Documentações técnicas, manuais e artefatos do projeto
+│   ├── imagens/                   # Prints das telas, logotipos e capturas para o README
+│   ├── modelagem/                 # Diagramas de arquitetura, UML e Banco de Dados
+│   │   ├── caso_de_uso.png
+│   │   ├── diagrama_classes.png
+│   │   ├── modelo_conceitual.png
+│   │   └── modelo_logico.png
+│   └── relatorio_cetam.pdf        # Relatório Técnico Final de Prática Supervisionada
+├── public/                        # Arquivos estáticos servidos diretamente
+│   ├── favicon.ico                # Ícone da aba do navegador
+│   ├── manifest.json              # Configuração do PWA (Progressive Web App)
+│   ├── robots.txt                 # Diretrizes para motores de busca
+│   └── service-worker.js          # Script para funcionamento Offline-First e cache
+├── src/                           # Código-fonte principal da aplicação
+│   ├── assets/                    # Recursos visuais e estilização global
+│   │   ├── fonts/                 # Fontes personalizadas
+│   │   ├── icons/                 # Ícones em formato SVG/PNG
+│   │   ├── img/                   # Imagens utilizadas na interface
+│   │   └── styles/                # Arquivos CSS/SASS/Styled-Components globais
+│   │       ├── global.css
+│   │       └── theme.js
+│   ├── components/                # Componentes reutilizáveis da interface (UI)
+│   │   ├── common/                # Elementos genéricos (Botões, Modais, Inputs, Cards)
+│   │   ├── layout/                # Estruturas fixas (Navbar, Sidebar, Footer, Header)
+│   │   └── offline/               # Indicadores de status de conexão e sincronização
+│   ├── config/                    # Configurações de ambiente, constantes e rotas
+│   │   ├── api.js                 # Instância do Axios / Fetch HTTP
+│   │   ├── constants.js           # Constantes do sistema (perfis, status)
+│   │   └── routes.js              # Mapeamento de rotas e permissões da aplicação
+│   ├── context/                   # Contextos globais da aplicação (React Context API / Redux)
+│   │   ├── AuthContext.js         # Estado global de autenticação e sessão do usuário
+│   │   └── SyncContext.js         # Gerenciador de sincronização dos dados offline
+│   ├── database/                  # Modelagem física e migrações do banco de dados
+│   │   ├── migrations/            # Histórico de alteração da estrutura do banco
+│   │   ├── seeds/                 # Dados iniciais para povoamento (mock de comunidades/serviços)
+│   │   └── schema.sql             # Script SQL de criação de tabelas (PostgreSQL + PostGIS)
+│   ├── hooks/                     # Custom Hooks (Lógica encapsulada reutilizável)
+│   │   ├── useAuth.js             # Hook para manipular autenticação
+│   │   ├── useIndexedDB.js        # Hook para leitura/escrita no banco local offline
+│   │   └── useOnlineStatus.js     # Hook para detectar queda/retorno de sinal de internet
+│   ├── services/                  # Comunicação externa, APIs e regras de negócio
+│   │   ├── api.js                 # Serviços de requisições REST
+│   │   ├── esusIntegration.js     # Módulo de exportação/sincronização no padrão e-SUS PEC
+│   │   ├── indexedDB.js           # Banco de dados local do navegador (IndexedDB/Dexie.js)
+│   │   └── syncService.js         # Motor de resolução de conflitos (Last Write Wins)
+│   ├── utils/                     # Funções utilitárias e ajudantes (Helpers)
+│   │   ├── formatters.js          # Formatadores de CPF, CNS, telefone e datas
+│   │   └── validators.js          # Validações de formulários (LGPD, campos obrigatórios)
+│   ├── views/                     # Telas/Páginas principais da aplicação
+│   │   ├── admin/                 # Painel do Gestor (Gerenciamento de Unidades e Relatórios)
+│   │   ├── auth/                  # Telas de Acesso (Login, Cadastro, Recuperação de Senha)
+│   │   ├── health/                # Módulo do Profissional (Atendimento Médico e Agendas)
+│   │   ├── patient/               # Módulo do Paciente/ACS (Solicitação e Consulta de Agendamentos)
+│   │   └── NotFound.js            # Tela de Erro 404
+│   ├── App.js                     # Componente raiz da aplicação
+│   └── index.js                   # Ponto de entrada (Entry point JavaScript)
+├── .env.example                   # Exemplo de variáveis de ambiente (sem chaves secretas)
+├── .eslintrc.json                 # Regras de padronização do código JavaScript/React
+├── .gitignore                     # Arquivos e pastas ignorados pelo Git (node_modules, .env)
+├── .prettierrc                    # Regras de formatação automática do código
+├── LICENSE                        # Licença de uso do software (ex: MIT)
+├── README.md                      # Documentação principal para o repositório no GitHub
+└── package.json                   # Dependências e scripts do Node.js
