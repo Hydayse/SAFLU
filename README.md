@@ -83,6 +83,7 @@ O sistema atende moradores, agentes comunitários de saúde (ACS), equipes médi
     +--------------------+                   +-------------------+
     
 ---
+
 saflu/
 ├── docs/                   # Documentações técnicas e manuais
 │   ├── modelagem/          # Diagramas ER, Casos de Uso e Sequência
