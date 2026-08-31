@@ -83,3 +83,20 @@ O sistema atende moradores, agentes comunitários de saúde (ACS), equipes médi
     +--------------------+                   +-------------------+
     
 
+
+'''
+saflu/
+├── docs/                   # Documentações técnicas e manuais
+│   ├── modelagem/          # Diagramas ER, Casos de Uso e Sequência
+│   └── relatorio_cetam.pdf # Relatório Técnico do Projeto
+├── src/
+│   ├── assets/             # Imagens, ícones e estilos globais
+│   ├── components/         # Componentes visuais reutilizáveis
+│   ├── database/           # Scripts SQL, migrations e seeds
+│   ├── services/           # Regras de negócio e integração API/e-SUS
+│   └── views/              # Telas do sistema (Login, Agenda, Dashboard)
+├── .gitignore
+├── LICENSE
+├── README.md
+└── package.json
+'''
